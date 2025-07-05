@@ -15,9 +15,11 @@ function liveClock(){
     let year=new Date().getFullYear();
     let fullDate=`${day}, ${date} ${month} ${year}`;
     document.getElementById("daydate").textContent=fullDate;
-    if(h>12){
-        h=h-12;
+    if(h>=12){
         ampm="PM";
+    }
+    if(h>12>{
+        h=h-12;
     }
     h=h<10 ?"0"+h :h;
     m=m<10 ?"0"+m :m;
